@@ -33,6 +33,7 @@ export const Banner: FC = () => {
           layout="responsive"
           objectFit="cover"
           objectPosition="50% 20%"
+          loading="eager"
         />
         <div className={styles.child}>
           <div className={styles.contents}>

@@ -26,7 +26,7 @@ export const Row: FC<Props> = ({ title, fetchUrl, isLargeRow }) => {
 
   return (
     <div className="ml-5 mb-5">
-      <h2 className="text-white text-lg">{title}</h2>
+      <h2 className="text-lg text-white">{title}</h2>
       <div className={`flex overflow-x-scroll ${styles.posters}`}>
         {movies.map((movie) => {
           return (
