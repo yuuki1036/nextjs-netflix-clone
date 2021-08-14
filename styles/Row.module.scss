@@ -1,0 +1,13 @@
+.posters {
+  &::-webkit-scrollbar {
+    display: none
+  }
+}
+
+.poster {
+  display: inline;
+  transition: transform 450ms;
+  &:hover {
+    transform: scale(1.09);
+  }
+}
