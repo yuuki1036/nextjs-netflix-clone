@@ -1,4 +1,4 @@
-export const SITE_NAME: string = "NETFUJIX";
+export const SITE_NAME: string = "NETFJIX";
 export const META_DESCRIPTION: string = "netflix clone site";
 
 export const API_BASE_URL: string = "https://api.themoviedb.org/3";
