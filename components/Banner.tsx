@@ -29,7 +29,7 @@ export const Banner: FC = () => {
           src={IMAGE_BASE_URL + movie?.backdrop_path}
           alt={movie?.original_name}
           width={1280}
-          height={410}
+          height={512}
           layout="responsive"
           objectFit="cover"
           objectPosition="50% 20%"

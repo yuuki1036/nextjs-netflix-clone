@@ -1,0 +1,56 @@
+.wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:40vw;
+}
+
+.image {
+  opacity: 0.5;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:40vw;
+  padding-top: 4.4vw;
+}
+
+.content {
+  display: flex;
+}
+
+.trailer {
+  flex-basis: 50%;
+  width: 100%;
+  height:30vw;
+  & iframe {
+    width: 100%;
+    height:30vw;
+  }
+}
+.noTrailer {
+  opacity: 0;
+}
+
+.detailWrapper {
+  flex-basis: 50%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.year {
+}
+
+.overview {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}

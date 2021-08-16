@@ -9,7 +9,6 @@ export const Nav: FC = () => {
     window.addEventListener("scroll", handleShow);
     return () => window.removeEventListener("scroll", handleShow);
   }, []);
-  console.log(styles);
   return (
     <div className={styles.wrapper + " " + (show && styles.wrapperBlack)}>
       <div style={{ position: "static" }}>

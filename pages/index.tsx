@@ -10,12 +10,12 @@ const Home: NextPage = () => {
     <Layout>
       <Nav />
       <Banner />
-      <Row title="top Rated" fetchUrl={requests.fetchTopRated} />
-      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
+      <Row title="Trending Movies" fetchUrl={requests.fetchTrending} />
+      <Row title="Science Fiction Movies" fetchUrl={requests.fetchSFMovies} />
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
-      <Row title="Documentaries" fetchUrl={requests.fetchDocumentMovies} />
+      {/* <Row title="Documentaries" fetchUrl={requests.fetchDocumentMovies} /> */}
     </Layout>
   );
 };

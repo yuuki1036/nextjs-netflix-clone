@@ -6,7 +6,7 @@ type Props = {
 
 export const Layout: FC<Props> = ({ children }) => {
   return (
-    <div className="bg-black text-white">
+    <div className="pb-10">
       <main>{children}</main>
     </div>
   );
