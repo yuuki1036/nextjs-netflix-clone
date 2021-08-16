@@ -3,10 +3,12 @@ import { Banner } from "components/Banner";
 import { Row } from "components/Row";
 import { requests } from "lib/requests";
 import type { NextPage } from "next";
+import { Nav } from "components/Nav";
 
 const Home: NextPage = () => {
   return (
     <Layout>
+      <Nav />
       <Banner />
       <Row title="top Rated" fetchUrl={requests.fetchTopRated} />
       <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />

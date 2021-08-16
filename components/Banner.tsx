@@ -3,7 +3,7 @@ import { API_BASE_URL, IMAGE_BASE_URL } from "lib/constants";
 import { requests } from "lib/requests";
 import { FC, useEffect, useState } from "react";
 import { Movie } from "types/Movie";
-import styles from "styles/MainVisual.module.scss";
+import styles from "styles/Banner.module.scss";
 import Image from "next/image";
 
 export const Banner: FC = () => {
@@ -33,11 +33,13 @@ export const Banner: FC = () => {
           layout="responsive"
           objectFit="cover"
           objectPosition="50% 20%"
-          loading="eager"
+          priority={true}
         />
         <div className={styles.child}>
           <div className={styles.contents}>
-            <h1 className={styles.title}>{movie?.original_name}</h1>
+            <h1 className={styles.title}>
+              {movie?.name || movie?.original_name || movie?.original_title}
+            </h1>
             <div className={styles.buttons}>
               <button className={styles.button}>Play</button>
               <button className={styles.button}>My List</button>
