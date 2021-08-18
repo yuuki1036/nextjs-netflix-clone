@@ -6,7 +6,6 @@ import { Movie } from "types/Movie";
 import styles from "styles/components/Row.module.scss";
 import { Detail } from "./Detail";
 import { Detail as DetailProps } from "types/Detail";
-const movieTrailer = require("movie-trailer");
 
 type Props = {
   title: string;
