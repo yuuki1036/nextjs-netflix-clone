@@ -3,8 +3,7 @@ import { API_BASE_URL, API_KEY, IMAGE_BASE_URL } from "lib/constants";
 import Image from "next/image";
 import { FC, useEffect, useState } from "react";
 import { Movie } from "types/Movie";
-import styles from "styles/Row.module.scss";
-import YouTube from "react-youtube";
+import styles from "styles/components/Row.module.scss";
 import { Detail } from "./Detail";
 import { Detail as DetailProps } from "types/Detail";
 const movieTrailer = require("movie-trailer");
@@ -49,9 +48,9 @@ export const Row: FC<Props> = ({ title, fetchUrl, isLargeRow }) => {
   };
 
   return (
-    <div className="ml-5 mb-5">
-      <h2 className="text-lg text-bold text-white">{title}</h2>
-      <div className={`flex overflow-x-scroll overflow-y-hidden ${styles.posters}`}>
+    <div className="mb-5">
+      <h2 className={`ml-5 sm:ml-3 ${styles.title}`}>{title}</h2>
+      <div className={`ml-5 sm:ml-1 ${styles.posters}`}>
         {movies.map((movie) => {
           return (
             <div className={`p-2 ${styles.poster}`} key={movie.id}>

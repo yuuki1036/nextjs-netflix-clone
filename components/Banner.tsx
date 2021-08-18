@@ -3,8 +3,9 @@ import { API_BASE_URL, IMAGE_BASE_URL } from "lib/constants";
 import { requests } from "lib/requests";
 import { FC, useEffect, useState } from "react";
 import { Movie } from "types/Movie";
-import styles from "styles/Banner.module.scss";
+import styles from "styles/components/Banner.module.scss";
 import Image from "next/image";
+import { truncate } from "lib/util";
 
 export const Banner: FC = () => {
   const [movie, setMovie] = useState<Movie>();
@@ -18,39 +19,32 @@ export const Banner: FC = () => {
     fetchData();
   }, []);
   console.log(movie);
-  const truncate = (str: any, n: number) => {
-    if (str !== undefined) return str.length > n ? str?.substr(0, n - 1) + "..." : str;
-  };
 
   return (
     <header className={styles.wrapper}>
-      <div className={styles.image}>
-        <Image
-          src={IMAGE_BASE_URL + movie?.backdrop_path}
-          alt={movie?.original_name}
-          width={1280}
-          height={512}
-          layout="responsive"
-          objectFit="cover"
-          objectPosition="50% 20%"
-          priority={true}
-        />
-        <div className={styles.child}>
-          <div className={styles.contents}>
-            <h1 className={styles.title}>
-              {movie?.name || movie?.original_name || movie?.original_title}
-            </h1>
-            <div className={styles.buttons}>
-              <button className={styles.button}>Play</button>
-              <button className={styles.button}>My List</button>
-            </div>
-
-            <h1 className={styles.description}>{truncate(movie?.overview, 150)}</h1>
+      <Image
+        src={IMAGE_BASE_URL + movie?.backdrop_path}
+        alt={movie?.original_name}
+        layout="fill"
+        objectFit="cover"
+        objectPosition="50% 20%"
+        priority={true}
+      />
+      <div className={styles.child}>
+        <div className="">
+          <h1 className={styles.title}>
+            {movie?.name || movie?.original_name || movie?.original_title}
+          </h1>
+          <div className={styles.buttons}>
+            <button className={styles.button}>Play</button>
+            <button className={styles.button}>My List</button>
           </div>
+
+          <h1 className={styles.overview}>{truncate(movie?.overview, 150)}</h1>
         </div>
-        <div className={styles.fadeWrapper}>
-          <div className={styles.fadeBottom} />
-        </div>
+      </div>
+      <div className={styles.fadeWrapper}>
+        <div className={styles.fadeBottom} />
       </div>
     </header>
   );

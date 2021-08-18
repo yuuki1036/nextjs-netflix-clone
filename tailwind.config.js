@@ -6,9 +6,11 @@ module.exports = {
     fontFamily: {
       sans: ["Georama"],
     },
-    colors: {
-      black: "#111",
-      white: "#fff",
+    screens: {
+      sm: { max: "576px" },
+      md: { max: "768px" },
+      lg: { max: "992px" },
+      xl: { max: "1200px" },
     },
     extend: {},
   },

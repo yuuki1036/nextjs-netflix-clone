@@ -1,0 +1,34 @@
+@import "variables";
+
+.title {
+  font-size: 1.4rem;
+  font-weight:500;
+
+  @include mq(xl) {
+    font-size: 1.2rem;
+  }
+  @include mq(lg) {
+    font-size: 1rem;
+  }
+  @include mq(sm) {
+    font-size: .8rem;
+  }
+}
+
+.posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  
+  &::-webkit-scrollbar {
+    display: none
+  }
+}
+
+.poster {
+  display: inline;
+  transition: transform 450ms;
+  &:hover {
+    transform: scale(1.09);
+  }
+}
