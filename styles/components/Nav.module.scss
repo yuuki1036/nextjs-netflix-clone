@@ -27,8 +27,9 @@
   @include mq(md) {
     height: 47px;
   }
-  @include mq(md) {
+  @include mq(sm) {
     height: 40px;
+    padding: 0 .8rem;
   }
 }
 
@@ -40,10 +41,6 @@
   @include mq(md) {
     width: 60px;
     min-height: 16px;
-  }
-  @include mq(sm) {
-    width: 48px;
-    min-height: 13px;
   }
 }
 

@@ -1,3 +1,9 @@
+@import "variables";
+
 .wrapper {
   padding-bottom: 5%;
+  
+  @include mq(sm){
+    padding-bottom: 3rem;
+  }
 }

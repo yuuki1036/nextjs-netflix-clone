@@ -18,7 +18,6 @@ export const Banner: FC = () => {
     };
     fetchData();
   }, []);
-  console.log(movie);
 
   return (
     <header className={styles.wrapper}>
