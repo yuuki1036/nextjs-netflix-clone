@@ -10,10 +10,9 @@ import { Detail as DetailProps } from "types/Detail";
 type Props = {
   title: string;
   fetchUrl: string;
-  isLargeRow?: boolean;
 };
 
-export const Row: FC<Props> = ({ title, fetchUrl, isLargeRow }) => {
+export const Row: FC<Props> = ({ title, fetchUrl }) => {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [thisMovie, setthisMovie] = useState<DetailProps | null>(null);
 
