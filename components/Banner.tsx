@@ -4,7 +4,7 @@ import { requests } from "lib/requests";
 import { FC, useEffect, useState } from "react";
 import { Movie } from "types/Movie";
 import styles from "styles/components/Banner.module.scss";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { truncate } from "lib/util";
 
 export const Banner: FC = () => {

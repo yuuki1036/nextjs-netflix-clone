@@ -10,24 +10,25 @@
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css,scss}'"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^1.21.0",
     "date-fns": "^2.23.0",
-    "next": "11.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "next": "15.5.28",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-youtube": "^7.13.1",
     "sass": "^1.38.0"
   },
   "devDependencies": {
-    "@types/react": "17.0.17",
-    "autoprefixer": "^10.3.1",
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.0",
+    "@types/node": "^20.19.43",
+    "@types/react": "^18.3.12",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.5.28",
     "eslint-config-prettier": "^8.3.0",
-    "postcss": "^8.3.6",
+    "postcss": "^8.5.23",
     "prettier": "^2.3.2",
-    "tailwindcss": "^2.2.7",
-    "typescript": "4.3.5"
+    "tailwindcss": "^2.2.19",
+    "typescript": "^5.6.3"
   },
   "prettier": {
     "trailingComma": "all",
@@ -36,5 +37,11 @@
     "singleQuote": false,
     "jsxSingleQuote": false,
     "printWidth": 100
+  },
+  "overrides": {
+    "postcss": "$postcss"
+  },
+  "resolutions": {
+    "postcss": "^8.5.23"
   }
 }

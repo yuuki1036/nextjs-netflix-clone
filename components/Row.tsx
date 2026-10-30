@@ -1,6 +1,6 @@
 import axios from "axios";
 import { API_BASE_URL, API_KEY, IMAGE_BASE_URL } from "lib/constants";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { FC, useEffect, useState } from "react";
 import { Movie } from "types/Movie";
 import styles from "styles/components/Row.module.scss";

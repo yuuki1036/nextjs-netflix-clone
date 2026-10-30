@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { FC, useEffect, useState } from "react";
 import styles from "../styles/components/Nav.module.scss";
 import Link from "next/link";
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 
 export const Nav: FC = () => {
   const router = useRouter();
