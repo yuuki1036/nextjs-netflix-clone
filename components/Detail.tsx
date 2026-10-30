@@ -1,7 +1,7 @@
 import { format, parseISO } from "date-fns";
 import { IMAGE_BASE_URL } from "lib/constants";
 import { truncate } from "lib/util";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { FC } from "react";
 import YouTube from "react-youtube";
 import { Detail as Props } from "types/Detail";
