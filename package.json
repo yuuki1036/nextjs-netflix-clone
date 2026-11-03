@@ -39,10 +39,12 @@
     "printWidth": 100
   },
   "overrides": {
-    "postcss": "$postcss"
+    "postcss": "$postcss",
+    "minimatch": "^11.0.3"
   },
   "resolutions": {
-    "postcss": "^8.5.23"
+    "postcss": "^8.5.23",
+    "minimatch": "^11.0.3"
   },
   "engines": {
     "node": "22.x"
