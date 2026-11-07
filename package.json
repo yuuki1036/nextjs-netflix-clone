@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "oxlint",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css,scss}'"
   },
   "dependencies": {
@@ -22,9 +22,7 @@
     "@types/node": "^20.19.43",
     "@types/react": "^18.3.12",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "15.5.28",
-    "eslint-config-prettier": "^8.3.0",
+    "oxlint": "^1.92.0",
     "postcss": "^8.5.23",
     "prettier": "^2.3.2",
     "tailwindcss": "^2.2.19",
@@ -39,14 +37,10 @@
     "printWidth": 100
   },
   "overrides": {
-    "postcss": "$postcss",
-    "minimatch": "^11.0.3"
-  },
-  "resolutions": {
-    "postcss": "^8.5.23",
-    "minimatch": "^11.0.3"
+    "postcss": "$postcss"
   },
   "engines": {
     "node": "22.x"
-  }
+  },
+  "packageManager": "npm@10.9.9"
 }
